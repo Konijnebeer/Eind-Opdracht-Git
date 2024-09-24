@@ -1,0 +1,15 @@
+/*
+    (\ /)
+    (-.-)
+*/
+
+body {
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+section{
+    margin: 10px;
+    padding: 10px;
+}
