@@ -1,0 +1,32 @@
+/*
+Colours all takken from Everforest src:https://github.com/sainnhe/everforest/blob/master/palette.md
+*/
+
+
+
+/* Light mode */
+@media (prefers-color-scheme: dark) {
+    :root {
+
+        /* Main background colour */
+            --mainBackground: #232A2E;
+        
+        /* Secondary background colour */
+            --secondBackground: #4F585E;
+
+        /* Main text colour*/
+            --mainText: #D3C6AA;
+        }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: light) {
+    :root {
+
+        /* Main background colour */
+            --mainBackground: #EFEBD4;
+        
+        /* Main text colour*/
+            --mainText: #5C6A72;
+        }
+}

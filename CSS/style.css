@@ -1,3 +1,4 @@
+@import "colourscheme.css";
 /*
     (\ /)
     (-.-)
@@ -5,21 +6,20 @@
 
 body {
     margin: 0;
+    background-color: var(--mainBackground);
+    color: var(--mainText);
 }
 * {
     box-sizing: border-box;
     border: 2px solid lightslategray;
 }
-section{
-    margin: 10px;
-    padding: 10px;
-}
+
 
 
 header{
     max-height: 500px;
-    height: 50vw;
-    background-image: url(https://picsum.photos/800/1200);
+    height: 30vw;
+    background-image: url(https://picsum.photos/500/200);
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -42,6 +42,7 @@ section{
     max-width: 1200px;
     width: 80vw;
     margin: auto;
+    padding: 10px;
 }
 
 
@@ -55,4 +56,50 @@ section{
 #contactForm .topLabel{
     display: flex;
     flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: var(--secondBackground);
+    padding: 1vw;
+    display: flex;
+}
+
+.siteInfo{
+    flex: 2;
+}
+
+.legalLinks{
+    display: flex;
+    flex-direction: column;
+}
+
+.socialLinks{
+    display: flex;
+    flex-direction: column;
+}
+.footDevider{
+flex: 5;
+}
+
+.settings{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 20px;
+    padding: 5px;
+}
+
+.settings button{
+    width: max-content;
+    border: none;
 }
