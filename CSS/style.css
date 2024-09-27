@@ -8,8 +8,51 @@ body {
 }
 * {
     box-sizing: border-box;
+    border: 2px solid lightslategray;
 }
 section{
     margin: 10px;
     padding: 10px;
+}
+
+
+header{
+    max-height: 500px;
+    height: 50vw;
+    background-image: url(https://picsum.photos/800/1200);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section{
+    min-width: 300px;
+    max-width: 1200px;
+    width: 80vw;
+    margin: auto;
+}
+
+
+#contactForm{
+    display: flex;
+    flex-direction: column;
+}
+#contactForm .formNextTo{
+    display: flex;
+}
+#contactForm .topLabel{
+    display: flex;
+    flex-direction: column;
 }
