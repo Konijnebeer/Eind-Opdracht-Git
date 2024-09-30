@@ -16,14 +16,81 @@ body {
 
 
 
+
+
+.pageNav{
+    display: flex;
+    justify-content: space-between;
+}
+.logoBox{
+    display: flex;
+    margin: 2vw;
+    align-items: center;
+    gap: 10px;
+}
+.logoBox .image{
+    width: 80px;
+    height: auto;
+}
+/* check later */
+.logoBox img{ 
+    width: 100%;
+    height: auto;
+    vertical-align: middle; /* magic gap fixer (‾◡◝) */
+}
+.pageLinks{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+
 header{
     max-height: 500px;
     height: 30vw;
-    background-image: url(https://picsum.photos/500/200);
+    background-image: url(https://picsum.photos/800/300);
     background-repeat: no-repeat;
     background-size: 100%;
 }
+header h1{
+    text-align: center;
+    padding: 2vw 0px;
+}
+header p{
+    text-align: center;
+    padding: 5px 30vw;
+}
 
+
+
+.topArticles h2{
+    text-align: center;
+}
+.recommended{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+.treeContainer{
+    /* width: 33%; No idea why no work */
+    flex: 1;
+}
+.treeContainer .image{
+    width: 100%;
+    height: auto;
+}
+.treeContainer img{
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.treeContainer h3{
+    text-align: center;
+}
+.treeContainer .rating{
+    width: 100%;
+}
 
 
 
