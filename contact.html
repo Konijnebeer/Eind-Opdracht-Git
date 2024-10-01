@@ -91,9 +91,50 @@
                     <input required type="checkbox" id="tos" name="tos" value="accepted">
                 </div>
             </div>
-            <button type="submit">Send</button>
+            <button id="target" onclick="DoAnimation();" type="submit">Send</button>
             </form>
         </section>
     </main>
+    <footer>
+        <div class="siteInfo">
+            <div class="logoBox">
+                <div class="image">
+                    <img src="https://picsum.photos/80" alt="logo">
+                </div>
+                <p>
+                    The Tree Society
+                </p>
+            </div>
+            <div class="copyrightNotice">
+                <p>
+                    est 20024
+                </p>
+                <a href="">Github Source</a>
+            </div>
+        </div>
+        <nav class="legalLinks">
+            <a href="tos.html">Terms-Of-Service</a>
+            <a href="cookies.html">Cookie Policy</a>
+        </nav>
+        <nav class="socialLinks">
+            <a href="">Instagram</a>
+            <a href="">X</a>
+        </nav>
+        <div class="footDevider"></div>
+        <div class="settings">
+            <button>Dark/Light mode</button>
+            <button>Language options</button>
+        </div>
+    </footer>
 </body>
 </html>
+
+<script>
+    /* <![CDATA[ */
+    
+    function DoAnimation() {
+      var targetElement = document.getElementById("target");
+      targetElement.className = "animate";
+    }
+    /* ]]> */
+      </script>

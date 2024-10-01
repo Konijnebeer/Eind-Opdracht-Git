@@ -8,14 +8,48 @@ Colours all takken from Everforest src:https://github.com/sainnhe/everforest/blo
 @media (prefers-color-scheme: dark) {
     :root {
 
-        /* Main background colour */
+        /* Main background */
             --mainBackground: #232A2E;
         
-        /* Secondary background colour */
+        /* Secondary background */
             --secondBackground: #4F585E;
 
-        /* Main text colour*/
+        /* Main text */
             --mainText: #D3C6AA;
+
+        /* Offtext */
+            --offText: #343F44;
+
+        /* Buttons, articles, etc */
+            --foreground: #56635f;
+
+        /* Red */
+            --red: #E67E80;
+
+        /* Orange */
+            --orange: #E69875;
+
+        /* Yellow */
+            --yellow: #DBBC7F;
+
+        /* Green */
+            --green: #A7C080;
+
+        /* Aqua */
+            --aqua: #83C092;
+
+        /* Blue */
+            --blue: #7FBBB3;
+
+        /* Purple */
+            --purple: #D699B6;
+
+        /* Confirm */
+            --green2: #A7C080;
+
+        /* Deconfirm */
+            --red2: #E67E80;
+
         }
 }
 
