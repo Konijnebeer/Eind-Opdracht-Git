@@ -11,14 +11,20 @@
     -->
 </head>
 <body>
-    <nav class="pagenav">
-        <div class="logobox">
-            <img src="" alt="logo">
+    <nav class="pageNav">
+        <div class="logoBox">
+            <div class="image">
+                <img src="https://picsum.photos/80" alt="logo">
+            </div>
+            <p>
             Forest View
+            </p>
         </div>
-        <a href="#titles1">link 1</a>
-        <a href="/index.html"> mainpage</a>
-        <a href="">link 3</a>
+        <div class="pageLinks">
+            <a href="#titles1">link 1</a>
+            <a href="index.html"> Home</a>
+            <a href="">link 3</a>
+            </div>
     </nav>
     <header>
         <h1>
@@ -35,30 +41,30 @@
             <div class="formNextTo">
                 <div class="topLabel">
                     <label for="first-name">First name</label>
-                    <input type="text" name="first-name" id="first-name">
+                    <input required type="text" name="first-name" id="first-name">
                 </div> 
                 <div class="topLabel">
                     <label for="last-name">Last name</label>
-                    <input type="text" name="last-name" id="last-name">
+                    <input required type="text" name="last-name" id="last-name">
                 </div>  
             </div>
             <div class="topLabel">
                 <label for="email">E-mail</label>
-                <input type="email" name="email" id="email">
+                <input required type="email" name="email" id="email">
             </div>
             <div class="formNextTo">
                 <div class="topLabel">
                     <label for="adres">Living adres</label>
-                    <input type="text" name="adres" id="adres">
+                    <input required type="text" name="adres" id="adres">
                 </div> 
                 <div class="topLabel">
                     <label for="birth-date">Date of birth</label>
-                    <input type="date" name="birth-date" id="birth-date">
+                    <input required type="date" name="birth-date" id="birth-date">
                 </div>  
             </div>
             <div class="topLabel">
                 <label for="about">Reason of contact</label>
-                <select id="about" name="about">
+                <select required id="about" name="about">
                     <option value="" disabled selected>Select an option</option>
                     <option value="option1">option1</option>
                     <option value="option2">option2</option>
@@ -68,7 +74,7 @@
             </div>
             <div class="topLabel">
                 <label for="message">Message</label>
-                <textarea name="message" id="message"></textarea>
+                <textarea required name="message" id="message"></textarea>
             </div>
             <div class="formNextTo">
                 <div class="topLabel">
@@ -80,9 +86,9 @@
                     <input type="radio" id="no" name="newsletter" value="no">
                     </div>
                 </div>
-                <div>
+                <div id="tosCheckbox">
                     <label for="tos">I agree to the Terms-Of-Service</label>
-                    <input type="checkbox" id="tos" name="tos" value="accepted">
+                    <input required type="checkbox" id="tos" name="tos" value="accepted">
                 </div>
             </div>
             <button type="submit">Send</button>
