@@ -32,15 +32,17 @@ img{
     background-color: var(--green);
     color: var(--offText);
     height: 8vh;
+    position:sticky; 
+    top:0;
+    z-index: 2;
 }
 .logoBox{
     display: flex;
     margin: 2vw;
     align-items: center;
-    gap: 10px;
 }
 .logoBox .image{
-    width: 60px;
+    width: 80px;
     height: auto;
 }
 .pageLinks{
@@ -59,7 +61,6 @@ img{
     text-decoration: none;
     background-color: var(--blue);
     border-radius: 10px;
-    
 }
 .pageLinks a:hover{
     box-shadow: 3px 2px 10px 2px rgba(0,0,0,0.20);
@@ -69,22 +70,28 @@ img{
 header{
     max-height: 500px;
     min-height: 200px;
-    height: 30vh;
-    background-image: url(../images/forestbg.webp);
+    height: calc(10vw + 25vh);
+    background-image: url(../images/forestbgw.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    border-top: 2px solid var(--secondBackground);
+    border-bottom: 2px solid var(--secondBackground);
+
 }
 header h1{
     text-align: center;
     padding: 2vw 0px;
+    font-size: 2.3rem;
 }
 header p{
     text-align: center;
     padding: 5px 30vw;
+    font-size: 1.3rem
 }
 
 
 .topArticles h2{
+    margin: 4vh 0px 1vh 0px;
     text-align: center;
 }
 .recommended{
@@ -92,7 +99,9 @@ header p{
     gap: 20px;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 20px;
+    padding-bottom: 2vw;
+    padding-top: 2vw;
+    perspective:100px;
 }
 .treeContainer{
     flex: 1;
@@ -104,35 +113,191 @@ header p{
 .treeContainer .image{
     width: 100%;
     height: auto;
+    border-radius: 15px;
+}
+.treeContainer .image img{
+    overflow: hidden;
 }
 .treeContainer h3{
     text-align: center;
 }
- .rating{
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-}
-.rating img{
-    width: 30px;
-}
-
 .recommended-info{
     display: flex;
     flex-direction: column;
     height: 100%;
+    padding: 0px 30px 30px 30px;
 }
+ .metaInfo{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--mainBackground);
+    border-radius: 5px;
+ }
+ .metaInfo p{
+    padding: 0px 10px;
+    font-size: 0.9rem;
+ }
+
 
 .treeContainer button{
     border: none;
+    background-color: var(--green);
+    padding: 5px;
+    border-radius: 10px;
+    align-self: center;
+    width: 100%;
+    animation: articleButtonD 2s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+}
+.treeContainer button:hover{
+    box-shadow: 10px 5px 10px 5px rgba(0,0,0,0.27);
+    animation: articleButton 2s cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s forwards;
+}
+@keyframes articleButton {
+    from{
+        translate: 0px;
+        width: 100%;
+        scale: 1;
+    }
+    to{
+        translate: 0px -20px;
+        width: 80%;
+        scale: 1.1;
+    }
+    
+}
+@keyframes articleButtonD {
+    from{
+        translate: 0px -20px;
+        width: 80%;
+        scale: 1.1;
+    }
+    to{
+        translate: 0px;
+        width: 100%;
+        scale: 1;
+    }
+    
 }
 
 
+#leftContainer{
+    animation: articleDSelectLeft 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+}
+#middleContainer{
+    animation: articleDSelectMiddle 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+}
+#rightContainer{
+    animation: articleDSelectRight 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+}
 
+#leftContainer:hover{
+    animation: articleSelectLeft 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+}
+#middleContainer:hover{
+    animation: articleSelectMiddle 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+}
+#rightContainer:hover{
+    animation: articleSelectRight 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+}
 
-
-
-
+@keyframes articleSelectLeft {
+    from{
+        transform: rotateY(-0.5deg);
+        scale: 1;
+    }
+    to{
+        transform: rotateY(0deg);
+        scale: 1.1;
+        z-index: 1;
+        position:relative;
+        margin-right: 20px;
+    }
+}
+@keyframes articleDSelectLeft {
+    from{
+        transform: rotateY(0deg);
+        scale: 1.1;
+        z-index: 1;
+        position:relative;
+        margin-right: 20px;
+    }
+    to{
+        transform: rotateY(-0.5deg);
+        scale: 1;
+    }
+}
+@keyframes articleSelectMiddle {
+    from{
+        scale: 1.05;
+    }
+    to{
+        scale: 1.1;
+        z-index: 1;
+        position:relative;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    
+}
+@keyframes articleDSelectMiddle {
+    from{
+        scale: 1.1;
+        z-index: 1;
+        position:relative;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    to{
+        scale: 1.05;
+    }
+    
+}
+@keyframes articleSelectRight {
+    from{
+        transform: rotateY(0.5deg);
+        scale: 1;
+    }
+    to{
+        transform: rotateY(0deg);
+        scale: 1.1;
+        z-index: 1;
+        position:relative;
+        margin-left: 20px;
+    }
+}
+@keyframes articleDSelectRight {
+    from{
+        transform: rotateY(0deg);
+        scale: 1.1;
+        z-index: 1;
+        position:relative;
+        margin-left: 20px;
+    }
+    to{
+        transform: rotateY(0.5deg);
+        scale: 1;
+    }
+}
+@media only screen and (max-width: 700px){
+    #leftContainer{
+        animation: none;
+    }
+    #middleContainer{
+        animation: none;
+    }
+    #rightContainer{
+        animation: none;
+    }
+    #leftContainer:hover{
+        animation: none;
+    }
+    #middleContainer:hover{
+        animation: none;
+    }
+    #rightContainer:hover{
+        animation: none;
+    }
+}
 
 
 
@@ -207,10 +372,10 @@ textarea{
 }
 
 #contactForm button:hover{
-
     cursor: grab;
+    align-self: center;
     box-shadow: 10px 5px 10px 5px rgba(0,0,0,0.27);
-    animation: buttonHover 2s cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s forwards;
+    animation: buttonHover 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s forwards;
 }
 
 @keyframes buttonHover {
@@ -221,8 +386,6 @@ textarea{
         scale: 1.1;
     } 
 }
-
-
 @keyframes slide-right {
 
     from {
@@ -233,12 +396,12 @@ textarea{
       opacity: 0.0;
     }
   }
-  .animate {
+.animate {
     animation-name: slide-right;
     animation-duration: 2s;
-  }
+}
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 700px){
     #contactForm .formNextTo{
         flex-direction: column;
         gap: 0px;
@@ -258,7 +421,7 @@ textarea{
 
 footer{
     background-color: var(--secondBackground);
-    padding: 2vw;
+    padding: 1vw;
     display: flex;
     color: var(--offText);
 }
@@ -268,14 +431,25 @@ footer a{
 }
 .siteInfo{
     flex: 1.5;
-    min-width: 230px;
+    min-width: 220px;
+    max-width: 320px;
     background-color: var(--yellow);
     border-radius: 10px;
+    margin: 0px 2vw 0px 0px;
 }
 .siteInfo .logoBox{
     flex-basis: 0;
     margin: 15px;
 }
+.siteInfo .logoBox img{
+    width: 70px;
+    height: 70px;
+
+}
+.siteInfo p{
+    padding: 10px;
+}
+
 .copyrightNotice{
     display: flex;
     flex-direction: column;
@@ -290,7 +464,7 @@ footer a{
 .legalLinks, .socialLinks{
     display: flex;
     flex-direction: column;
-    margin: 0px 2vw;
+    margin: 0px 1vw;
     padding: 10px;
     text-align: center;
     min-width: 10vw;
@@ -303,9 +477,12 @@ footer a{
     background-color: var(--red);
     border-radius: 10px;
 }
+.legalLinks strong, .socialLinks strong{
+    padding: 10px;
+}
 
 .legalLinks a, .socialLinks a{
-    margin: 10px 0px;
+    margin: 8px 0px;
     color: var(--offText);
 }
 
@@ -330,11 +507,24 @@ flex-grow: 5;
     background-color: var(--blue);
     padding: 8px;
 }
+.settings button:hover{
+    cursor: grab;
+    animation: buttonHover 2s cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s forwards;
+}
 
 
 
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 700px){
+    header{
+        height: calc(30vh + 10vw);
+    }
+    .topArticles{
+        padding: 8%;
+    }
+    .recommended{
+        flex-direction: column;
+    }
     footer{
         flex-direction: column;
     }
