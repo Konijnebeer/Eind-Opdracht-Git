@@ -9,16 +9,16 @@ Colours all takken from Everforest src:https://github.com/sainnhe/everforest/blo
     :root {
 
         /* Main background */
-            --mainBackground: #232A2E;
+            --main-background: #232A2E;
         
         /* Secondary background */
-            --secondBackground: #4F585E;
+            --second-background: #4F585E;
 
         /* Main text */
-            --mainText: #D3C6AA;
+            --main-text: #D3C6AA;
 
-        /* Offtext */
-            --offText: #343F44;
+        /* off-text */
+            --off-text: #343F44;
 
         /* Buttons, articles, etc */
             --foreground: #56635f;
@@ -58,9 +58,9 @@ Colours all takken from Everforest src:https://github.com/sainnhe/everforest/blo
     :root {
 
         /* Main background colour */
-            --mainBackground: #EFEBD4;
+            --main-background: #EFEBD4;
         
         /* Main text colour*/
-            --mainText: #5C6A72;
+            --main-text: #5C6A72;
         }
 }

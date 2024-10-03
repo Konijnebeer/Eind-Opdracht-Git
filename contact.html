@@ -11,58 +11,55 @@
     -->
 </head>
 <body>
-    <nav class="pageNav">
-        <div class="logoBox">
+    <nav class="page-nav">
+        <div class="logo-box">
             <div class="image">
-                <img src="https://picsum.photos/80" alt="logo">
+                <img src="./images/logo-removebg-preview.png" alt="logo">
             </div>
-            <p>
-            Forest View
-            </p>
         </div>
-        <div class="pageLinks">
-            <a href="#titles1">link 1</a>
+        <div class="page-links">
             <a href="index.html"> Home</a>
-            <a href="">link 3</a>
-            </div>
+            <a href="contact.html"> Contact</a>
+            <a href="">Locations</a>
+        </div>
     </nav>
     <header>
         <h1>
             Contact form
         </h1>
         <p>
-            Amet ut ut fugiat consequat ut cillum. Sint elit sunt dolore mollit non magna reprehenderit veniam irure consequat Lorem. Deserunt sunt tempor veniam nostrud laborum est id anim amet nulla duis.
+            We are an organisation dedicated to the well being of naturereserves in europe. <br> Our purpose is to keep the public informed to what good their money does.
         </p>
     </header>
     <main>
         <section>
             <h2>Form</h2>
-            <form id="contactForm">
-            <div class="formNextTo">
-                <div class="topLabel">
+            <form id="contact-form">
+            <div class="form-next-to">
+                <div class="top-label">
                     <label for="first-name">First name</label>
                     <input required type="text" name="first-name" id="first-name">
                 </div> 
-                <div class="topLabel">
+                <div class="top-label">
                     <label for="last-name">Last name</label>
                     <input required type="text" name="last-name" id="last-name">
                 </div>  
             </div>
-            <div class="topLabel">
+            <div class="top-label">
                 <label for="email">E-mail</label>
                 <input required type="email" name="email" id="email">
             </div>
-            <div class="formNextTo">
-                <div class="topLabel">
+            <div class="form-next-to">
+                <div class="top-label">
                     <label for="adres">Living adres</label>
                     <input required type="text" name="adres" id="adres">
                 </div> 
-                <div class="topLabel">
+                <div class="top-label">
                     <label for="birth-date">Date of birth</label>
                     <input required type="date" name="birth-date" id="birth-date">
                 </div>  
             </div>
-            <div class="topLabel">
+            <div class="top-label">
                 <label for="about">Reason of contact</label>
                 <select required id="about" name="about">
                     <option value="" disabled selected>Select an option</option>
@@ -72,12 +69,12 @@
                     <option value="option4">option4</option>
                 </select>
             </div>
-            <div class="topLabel">
+            <div class="top-label">
                 <label for="message">Message</label>
                 <textarea required name="message" id="message"></textarea>
             </div>
-            <div class="formNextTo">
-                <div class="topLabel">
+            <div class="form-next-to">
+                <div class="top-label">
                     <p>Do you want the newsletter?</p>
                     <div>
                     <label for="yes">Yes</label>
@@ -86,7 +83,7 @@
                     <input type="radio" id="no" name="newsletter" value="no">
                     </div>
                 </div>
-                <div id="tosCheckbox">
+                <div id="tos-checkbox">
                     <label for="tos">I agree to the Terms-Of-Service</label>
                     <input required type="checkbox" id="tos" name="tos" value="accepted">
                 </div>
@@ -96,8 +93,8 @@
         </section>
     </main>
     <footer>
-        <div class="siteInfo">
-            <div class="logoBox">
+        <div class="site-info">
+            <div class="logo-box">
                 <div class="image">
                     <img src="https://picsum.photos/80" alt="logo">
                 </div>
@@ -105,32 +102,32 @@
                     The Tree Society
                 </p>
             </div>
-            <div class="copyrightNotice">
+            <div class="copyright-notice">
                 <p>
                     est 20024
                 </p>
-                <a href="">Github Source</a>
+                <a href="https://github.com/Konijnebeer/Eind-Opdracht-Git" target="_blank">Github Source</a>
             </div>
         </div>
-        <nav class="legalLinks">
+        <nav class="legal-links">
             <a href="tos.html">Terms-Of-Service</a>
             <a href="cookies.html">Cookie Policy</a>
         </nav>
-        <nav class="socialLinks">
+        <nav class="social-links">
             <a href="">Instagram</a>
             <a href="">X</a>
         </nav>
-        <div class="footDevider"></div>
+        <div class="foot-devider"></div>
         <div class="settings">
             <button>Dark/Light mode</button>
             <button>Language options</button>
         </div>
     </footer>
+    <script> <!-- Makes the submit button Woooosh -->
+        function DoAnimation() {
+          var targetElement = document.getElementById("target");
+          targetElement.className = "animate";
+        }
+    </script>
 </body>
-<script>
-    function DoAnimation() {
-      var targetElement = document.getElementById("target");
-      targetElement.className = "animate";
-    }
-</script>
 </html>
