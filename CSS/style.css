@@ -82,11 +82,13 @@ header{
 header h1{
     text-align: center;
     padding: 2vw 0px;
+    color: var(--image-text);
     font-size: 2.7rem;
 }
 header p{
     text-align: center;
     padding: 5px 30vw;
+    color: var(--image-text);
     font-size: 1.3rem
 }
 
@@ -468,6 +470,11 @@ footer a{
 .copyright-notice a, .copyright-notice p{
     padding: 0px 0px 15px 0px;
     margin: 0px;
+}
+.copyright-notice a:hover{
+    text-decoration: underline  2px var(--orange);
+    scale: 1.1;
+    transform: translateX(8px);
 }
 
 .legal-links, .social-links{

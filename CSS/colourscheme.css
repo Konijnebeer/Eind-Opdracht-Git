@@ -23,6 +23,9 @@ Colours all takken from Everforest src:https://github.com/sainnhe/everforest/blo
         /* Buttons, articles, etc */
             --foreground: #56635f;
 
+        /* For images */
+        --image-text: #D3C6AA;
+
         /* Red */
             --red: #E67E80;
 
@@ -58,9 +61,48 @@ Colours all takken from Everforest src:https://github.com/sainnhe/everforest/blo
     :root {
 
         /* Main background colour */
-            --main-background: #EFEBD4;
+        --main-background: #EFEBD4;
+
+        /* Secondary background */
+        --second-background: #E0DCC7;
         
         /* Main text colour*/
-            --main-text: #5C6A72;
+        --main-text: #5C6A72;
+            
+        /* off-text */
+        --off-text: #F4F0D9;
+
+        /* Buttons, articles, etc */
+        --foreground: #BDC3AF;
+
+        /* For images */
+        --image-text: #D3C6AA;
+
+        /* Red */
+        --red: #E67E80;
+
+        /* Orange */
+            --orange: #E69875;
+
+        /* Yellow */
+            --yellow: #DBBC7F;
+
+        /* Green */
+            --green: #A7C080;
+
+        /* Aqua */
+            --aqua: #83C092;
+
+        /* Blue */
+            --blue: #7FBBB3;
+
+        /* Purple */
+            --purple: #D699B6;
+
+        /* Confirm */
+            --green2: #A7C080;
+
+        /* Deconfirm */
+            --red2: #E67E80;
         }
 }
