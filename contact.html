@@ -28,7 +28,7 @@
             Contact form
         </h1>
         <p>
-            We are an organisation dedicated to the well being of naturereserves in europe. <br> Our purpose is to keep the public informed to what good their money does.
+            Contact us for any enquiries or business opportunities.
         </p>
     </header>
     <main>
@@ -63,10 +63,9 @@
                 <label for="about">Reason of contact</label>
                 <select required id="about" name="about">
                     <option value="" disabled selected>Select an option</option>
-                    <option value="option1">option1</option>
-                    <option value="option2">option2</option>
-                    <option value="option3">option3</option>
-                    <option value="option4">option4</option>
+                    <option value="option1">Business</option>
+                    <option value="option2">Intervieuw</option>
+                    <option value="option3">News tip</option>
                 </select>
             </div>
             <div class="top-label">
@@ -113,17 +112,22 @@
             <strong>Legal</strong>
             <a href="tos.html">Terms-Of-Service</a>
             <a href="cookies.html">Cookie Policy</a>
+            <a href="contact.html">Contact Page</a>
+            <a href="privacy.html">Privacy Statement</a>
         </nav>
         <nav class="social-links">
             <strong>Socials</strong>
-            <a href="">Instagram</a>
-            <a href="">X</a>
+            <div>
+            <a href="">Instagram</a> 
+            <img src="/CSS/icons/instagram.svg" alt="Instgram Logo">
+            </div>
+            <div>
+            <a href="">Facebook</a> 
+            <img src="/CSS/icons/facebook.svg" alt="Facebook Logo">
+            </div>
         </nav>
-        <div class="foot-devider"></div>
-        <div class="settings">
-            <button>Dark/Light mode</button>
-            <button>Language options</button>
-        </div>
+            <button id="dark-light">Dark/Light mode</button>
+            <button id="lang">Language options</button>
     </footer>
     <script> <!-- Makes the submit button Woooosh -->
         function DoAnimation() {

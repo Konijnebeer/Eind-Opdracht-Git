@@ -4,7 +4,7 @@ Colours all takken from Everforest src:https://github.com/sainnhe/everforest/blo
 
 
 
-/* Light mode */
+/* Dark mode */
 @media (prefers-color-scheme: dark) {
     :root {
 
@@ -56,7 +56,7 @@ Colours all takken from Everforest src:https://github.com/sainnhe/everforest/blo
         }
 }
 
-/* Dark mode */
+/* Light mode */
 @media (prefers-color-scheme: light) {
     :root {
 
