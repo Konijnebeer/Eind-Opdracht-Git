@@ -533,6 +533,7 @@ footer a{
 }
 .legal-links strong, .social-links strong{
     padding: 10px;
+    font-weight: 700;
 }
 
 .settings{
