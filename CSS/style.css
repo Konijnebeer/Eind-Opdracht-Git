@@ -492,7 +492,7 @@ footer a{
 .copyright-notice a:hover{
     text-decoration: underline  2px var(--orange);
     scale: 1.1;
-    transform: translateX(8px);
+    transform: translateX(15px);
 }
 
 .legal-links, .social-links{
